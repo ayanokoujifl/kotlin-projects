@@ -1,6 +1,5 @@
 package com.ayanokoujifl.change_theme.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -9,31 +8,20 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Color(0xFF600A0A),
-    secondary = PurpleGrey80,
-    tertiary = Pink80,
-    background = Color(0xFF838EFF)
+    primary = Cyan500,
+    background = Slate900,
+    secondary = Cyan900,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Color(0xFFFF0000),
-    secondary = Color(red = 245, green = 245, blue = 255, alpha = 255),
-    tertiary = Pink40,
-    background = Color(0xFF69E503)
+    background = Slate100,
+    primary = Cyan900,
+    secondary = Cyan500,
+    tertiary = Slate100,
 
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
 )
 
 @Composable

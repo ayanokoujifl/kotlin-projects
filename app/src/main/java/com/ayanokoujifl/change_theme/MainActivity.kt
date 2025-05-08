@@ -30,9 +30,15 @@ class MainActivity : ComponentActivity() {
                     ToggleTheme(
                         isDarkTheme = isDarkTheme,
                         onToggleTheme = { isDarkTheme = !isDarkTheme })
+                    Badge()
                 }
             }
         }
     }
 }
 
+@Preview
+@Composable
+fun PreviewBadge() {
+    Badge()
+}
